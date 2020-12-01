@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  .col.s12 {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .task-list-data {
+    padding-left: 10px;
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo center">Task List</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="add-task">
+      <div class="row">
+        <form class="col s12">
+          <div class="row" style="width: 100%;">
+            <div class="input-field col s12">
+              <textarea id="textareaAdd" class="materialize-textarea"></textarea>
+              <label for="textarea1">Nhap vao gi do ...</label>
+            </div>
+          </div>
+          <a class="btn-floating btn-large waves-effect waves-light red" id="add" ><i
+            class="material-icons">add</i></a>
+        </form>
+      </div>
+    </div>
+
+    <div class="task-list-data">
+      <li class="with-header" style="list-style: none;">
+        <h4>Lists</h4>
+      </li>
+      <ul class="collection with-header" id="main-list"></ul>
+    </div>
+  </main>
+
+  <!-- Compiled and minified JavaScript -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.1/uuid.min.js"
+    integrity="sha512-4JH7nC4nSqPixxbhZCLETJ+DUfHa+Ggk90LETm25fi/SitneSvtxkcWAUujvYrgKgvrvwv4NDAsFgdwCS79Dcw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
